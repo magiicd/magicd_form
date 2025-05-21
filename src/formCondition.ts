@@ -1,3 +1,4 @@
+import { renderSchema } from "./renderSchema";
 import { Condition, Data, FieldError, FormSchema, Role } from "./types";
 
 const isValidRegex = (regex: string, str: string | null) => {
@@ -75,11 +76,18 @@ const checkCondition = (
   return false;
 };
 
-export const validateRoles = (
-  schema: FormSchema[],
-  roles: Role[],
-  data: Data
-): { [key: string]: string } => {
+export const validateRoles = (props: {
+  schema: FormSchema[];
+  roles: Role[];
+  data: Data;
+  trans: Function;
+}): { [key: string]: string } => {
+  const { schema, data, trans } = props;
+  const roles = renderSchema({
+    roles: props.roles,
+    schema,
+    trans,
+  });
   const errors: FieldError[] = [];
   for (const role of roles) {
     // Separate AND and OR conditions

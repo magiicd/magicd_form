@@ -1,8 +1,16 @@
 import { toAllUpper, toUpper } from "./toUpper";
 import { FormSchema, ManipulateSchema, Role } from "./types";
 
-export const renderSchema = (schema: FormSchema[], trans: Function) => {
-  const list: Role[] = [];
+export const renderSchema = ({
+  roles,
+  schema,
+  trans,
+}: {
+  schema: FormSchema[];
+  trans: Function;
+  roles: Role[];
+}) => {
+  const list: Role[] = [...(roles?.length ? roles : [])];
   schema?.map((r) => {
     if (r?.role?.min) {
       list.push({
@@ -51,6 +59,7 @@ export const renderSchema = (schema: FormSchema[], trans: Function) => {
       }
     }
   });
+  return list;
 };
 
 export const renderManipulate = (
