@@ -1,6 +1,4 @@
-import { Role } from "./types";
-
-type RolesType = { [key: string]: Role[] };
+import { RolesType } from "./types";
 
 export const adminRoles: RolesType = {
   changeProfile: [

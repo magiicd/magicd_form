@@ -1,6 +1,4 @@
-import { FormSchema } from "./types";
-
-type SchemaType = { [key: string]: (data: any) => FormSchema[] };
+import { SchemaType } from "./types";
 
 export const adminSchema: SchemaType = {
   changeProfile: (data?: any) => [

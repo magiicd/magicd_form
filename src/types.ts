@@ -34,3 +34,7 @@ export type Role = {
 };
 
 export type Data = Record<string, any>;
+
+export type RolesType = { [key: string]: Role[] };
+
+export type SchemaType = { [key: string]: (data: any) => FormSchema[] };
