@@ -5,7 +5,10 @@
     "outDir": "dist",
     "rootDir": "src",
     "strict": true,
-    "declaration": true
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "stripInternal": true,
+    "composite": false
   },
   "include": ["src/**/*"],
   "exclude": ["dist", "node_modules"]
