@@ -1,8 +1,8 @@
 import { FormSchema } from "./types";
 
-type schemaType = { [key: string]: (data: any) => FormSchema[] };
+type SchemaType = { [key: string]: (data: any) => FormSchema[] };
 
-export const AdminSchema: schemaType = {
+export const adminSchema: SchemaType = {
   changeProfile: (data?: any) => [
     {
       type: "text",
@@ -39,4 +39,4 @@ export const AdminSchema: schemaType = {
   ],
 };
 
-export const ClientSchema: schemaType = {};
+export const clientSchema: SchemaType = {};

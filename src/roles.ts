@@ -1,8 +1,8 @@
 import { Role } from "./types";
 
-type rolesType = { [key: string]: Role[] };
+type RolesType = { [key: string]: Role[] };
 
-export const AdminRoles: rolesType = {
+export const adminRoles: RolesType = {
   changeProfile: [
     {
       condition: ["exist:email", "!exist:password"],
@@ -33,4 +33,4 @@ export const AdminRoles: rolesType = {
   ],
 };
 
-export const ClientRoles: rolesType = {};
+export const clientRoles: RolesType = {};
