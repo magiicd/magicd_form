@@ -1,0 +1,24 @@
+{
+  "name": "magicd_form",
+  "version": "0.1.0",
+  "description": "A form handler for magicd project",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/magiicd/magicd_form.git"
+  },
+  "keywords": [
+    "javascript",
+    "typescript"
+  ],
+  "author": "@MAGIC@",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
