@@ -1,10 +1,10 @@
-# magicd form
+# Magicd Form
 
 A form handler for magicd project
 
 ## Usage
 
-1. Install dependencies:
+1. Install dependencies
 
 ## License
 
