@@ -1,6 +1,6 @@
 {
   "name": "magicd_form",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A form handler for magicd project",
   "types": "dist/index.d.ts",
   "scripts": {

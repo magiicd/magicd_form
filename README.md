@@ -1,4 +1,4 @@
-# js-ts-starter
+# magicd form
 
 A form handler for magicd project
 
